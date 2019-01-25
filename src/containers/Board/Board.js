@@ -40,7 +40,8 @@ class Board extends Component {
         } = this.props
         const boardClasses = classNames('board-container', {
             'mode-camera': isActionBoardOpen,
-            'mode-gallery': !isActionBoardOpen
+            'mode-gallery': !isActionBoardOpen && !selectedAlbumName,
+            'mode-single-album': !isActionBoardOpen && selectedAlbumName
         })
 
         return (

@@ -19,10 +19,7 @@
     &--close {
         @include button-fixed;
         color: #fff;
-        right: 1rem;
+        right: 2rem;
         z-index: 9;
-        @media (min-width: 764px) {
-            right: 2rem;
-        }
     }
 }
