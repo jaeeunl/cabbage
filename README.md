@@ -1,5 +1,4 @@
-#Cabbage
-
+## Demo
 Demo: https://ja-ee-un.com/cabbage/
 
 ## Installation
