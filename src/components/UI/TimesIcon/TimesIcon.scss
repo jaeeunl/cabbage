@@ -1,0 +1,5 @@
+@import '../../../styles/mixins';
+
+.button-close {
+    @include icon-button;
+}

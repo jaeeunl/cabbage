@@ -1,0 +1,26 @@
+.camera--action {
+  transform: scale(1);
+
+  &.dialog-enter {
+    opacity: 0.01;
+    transform: scale(0.1);
+  }
+ 
+  &.dialog-enter-active {
+
+    opacity: 1;
+    transform: scale(1);
+    transition: all 300ms;
+  }
+  
+  // &.dialog-exit {
+  //   opacity: 1;
+  //   transform: scale(1);
+  // }
+  
+  // &.dialog-exit-active {
+  //   opacity: 0.01;
+  //   transform: scale(0);
+  //   transition: all 300ms;
+  // }
+}

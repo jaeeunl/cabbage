@@ -1,0 +1,12 @@
+.album--items-by-date--item {
+    flex: 0 1 calc(20% - 0.08rem);
+    margin-right: 0.1rem;
+    margin-bottom: 0.1rem;
+    list-style-type: none;
+    &:nth-of-type(5n) {
+        margin-right: 0;
+    }
+    img {
+        max-width: 100%;
+    }
+}

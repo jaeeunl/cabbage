@@ -1,0 +1,16 @@
+@import '../../../../styles/colors';
+
+.camera--preview--list {
+   padding: 0;
+   margin: 3.5rem 0;
+   height: calc(100vh - 20.5rem);
+   overflow-y: auto;
+   font-size: 0;
+   @media (min-width: 768px) {
+      height: calc(100vh - 20.9rem);
+      margin: 4.5rem 0;
+   }
+   @media (min-width: 1024px) {
+      height: calc(100vh - 23rem);
+   }
+}

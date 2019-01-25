@@ -1,0 +1,19 @@
+@import '../../../styles/colors';
+@import '../../../styles/mixins';
+
+.camera--preview {
+    min-height: 100vh;
+    &--back {
+        @include button-fixed-left;
+        position: fixed;
+        
+    }
+    &.dialog-enter {
+        transform: translateX(100%);
+      }
+     
+      &.dialog-enter-active {
+        transform: translateX(0);
+        transition: all 300ms;
+      }
+}

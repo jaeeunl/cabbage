@@ -1,0 +1,17 @@
+
+export const OPEN_CAMERA = 'OPEN_CAMERA'
+export const OPEN_PREVIEW = 'OPEN_PREVIEW'
+export const CLOSE_CAMERA = 'CLOSE_CAMERA'
+export const TAKE_PICTURE = 'TAKE_PICTURE'
+export const OPEN_ACTION_BOARD = 'OPEN_ACTION_BOARD'
+export const CLOSE_ACTION_BOARD = 'CLOSE_ACTION_BOARD'
+export const TAKE_PHOTO = 'TAKE_PHOTO'
+export const SAVE_PHOTOS = 'SAVE_PHOTOS'
+export const OPEN_ALBUM = 'OPEN_ALBUM'
+export const CLOSE_ALBUM = 'CLOSE_ALBUM'
+export const SELECT_ALBUM = 'SELECT_ALBUM'
+export const OPEN_IMAGE_MODAL = 'OPEN_IMAGE_MODAL'
+export const CLOSE_IMAGE_MODAL = 'CLOSE_IMAGE_MODAL'
+export const SHOW_FLASH = 'SHOW_FLASH'
+export const HIDE_FLASH = 'HIDE_FLASH'
+export const WEBCAM_ERROR = "WEBCAM_ERROR"

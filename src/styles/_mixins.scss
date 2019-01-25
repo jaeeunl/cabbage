@@ -1,0 +1,28 @@
+@mixin button-fixed {
+    position: fixed;
+}
+
+@mixin icon-button {
+    top: 1.2rem;
+    font-size: 1.1rem;
+    @media (min-width: 768px) {
+        top: 1.5rem;
+        font-size: 1.5rem;
+    }
+    @media (min-width: 1024px) {
+        top: 1.7rem;
+    }
+}
+
+@mixin button-fixed {
+    @include icon-button;
+    position: fixed;
+}
+
+@mixin button-fixed-left {
+    @include button-fixed;
+    left: 1rem;
+    @media (min-width: 768px) {
+        left: 2rem;
+    }
+}

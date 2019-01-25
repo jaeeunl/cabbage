@@ -1,0 +1,10 @@
+@import '../../../../styles/colors';
+
+.camera--preview--menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    box-shadow: -3px -3px 3px rgba($gray, 0.1)
+}

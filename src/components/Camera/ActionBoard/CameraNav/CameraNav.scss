@@ -1,0 +1,25 @@
+@import '../../../../styles/mixins';
+
+.camera--action--nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    height: 4rem;
+    z-index:9;
+    &--close {
+        @include button-fixed-left;
+    }
+    &--next {
+        position: fixed;
+        top: 1.2rem;
+        right: 0.5rem;
+        font-size: 1rem;
+        @media (min-width: 768px) {
+            right: 1.5rem;
+            font-size: 1.2rem;
+       }
+    }
+}

@@ -1,0 +1,23 @@
+@import '../../../../../styles/colors';
+
+.button--save {
+    display: block;
+    width: 7rem;
+    height: 2.1rem;
+    margin: 1rem 2rem 2.5rem auto;
+    background-color: $purple;
+    border: 0;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.2s linear;
+    &:disabled {
+        background: $light-gray;
+    }
+    @media (min-width: 768px) {
+        width: 10rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
+}

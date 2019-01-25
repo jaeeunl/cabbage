@@ -1,0 +1,28 @@
+@import '../../../styles/mixins';
+
+.image-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 99;
+    img {
+        position: absolute;
+        max-height: 100%;
+        max-width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &--close {
+        @include button-fixed;
+        color: #fff;
+        right: 1rem;
+        z-index: 9;
+        @media (min-width: 764px) {
+            right: 2rem;
+        }
+    }
+}

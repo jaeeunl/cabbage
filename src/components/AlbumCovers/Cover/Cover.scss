@@ -1,0 +1,145 @@
+@import '../../../styles/colors';
+
+.album-covers--list--item {
+    flex: 0 1 calc(50% - 1rem);
+    position: relative;
+    height: 8rem;
+    max-width: 18rem;
+    margin: 0 auto 1rem;
+    border: 1px solid $light-gray;
+    list-style: none;
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -1px;
+        right: -1px;
+        border-width: 25px 25px 0 0;
+        border-color: #cccccc #ffffff #ffffff #ffffff;
+        border-style: solid;
+    }
+    @media (min-width: 768px) {
+        height: 12rem;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+        &:nth-child(2n)  {
+            margin-right: 0;
+        }
+    }
+    @media (min-width: 1024px) {
+        flex: 0 1 calc(25% - 1rem);
+        height: 15rem;
+        margin-right: 1rem;
+        &:nth-child(2n) {
+            margin-right: 1rem;
+        }
+        &:nth-child(4n){
+            margin-right: 0;
+        }
+    }
+    &.selected {
+        border-color: black;
+        &::after {
+            border-color: $black #ffffff #ffffff #ffffff
+        }
+    }
+    &--title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        padding: 10px;
+        background: #fff;
+        margin: 0;
+        top: 65%;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        font-size: 1rem;
+        text-align: center;
+        @media (min-width: 768px) {
+            font-size: 1.5rem;
+        }
+    }
+    &--image {
+        height: 65%;
+        background-size: cover;
+    }
+    &.romaine {
+        .album-covers--list--item--image {
+            background-image: url('../../../assets/images/romaine.jpeg');
+        }
+    }
+    &.butterhead {
+        .album-covers--list--item--image {
+            background-image: url('../../../assets/images/butterhead-lettuce.jpg');          
+        }
+    }
+    &.basil {
+        .album-covers--list--item--image {
+            background-image: url('../../../assets/images/basil.jpg');          
+        }
+    }
+    &.kale {
+        .album-covers--list--item--image {
+            background-image: url('../../../assets/images/kale.jpeg');
+        }
+    }
+    &.spinach {
+        .album-covers--list--item--image {
+            background-image: url('../../../assets/images/spinach.jpg');          
+        }
+    }
+    &.oakleaf {
+        .album-covers--list--item--image {
+            background-image: url('../../../assets/images/oakleaf.jpg');          
+        }
+    }
+    &.bok-choy {
+        .album-covers--list--item--image {
+            background-image: url('../../../assets/images/bok-choy.jpg');          
+        }
+    }
+    &.arugula {
+        .album-covers--list--item--image {
+            background-image: url('../../../assets/images/arugula.jpg');          
+        }
+    }
+}
+
+.camera--preview {
+    .album-covers--list--item {
+        flex: 1 1 calc(25% - 0.4rem);
+        height: 4rem;
+        margin: 0 0.25rem 0.25rem 0; 
+        &::after {
+            border-width: 10px 10px 0 0;
+        }
+        &:last-child, &:nth-of-type(4n) {
+            margin-right: 0;
+        }
+        &--title {
+            font-size: 0.5rem;
+        }
+        @media (min-width: 768px) {
+            flex: 1 1 calc(12.5% - 0.45rem);
+            height: 5rem;
+            margin: 0 0.5rem 0.5rem 0; 
+            &:nth-of-type(4n) {
+                margin: 0 0.5rem 0.5rem 0; 
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            &--title {
+                font-size: 0.8rem;
+            }
+        }
+        @media (min-width: 1024px) {
+            height: 8rem;
+            &--title {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.album-covers {
+    margin: 1rem;
+    @media (min-width: 1024px) {
+        margin: 0;
+    }
+    &--list {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        @media (min-width: 768px) {
+            margin: 0 5rem;
+        }
+        @media (min-width: 1024px) {
+            margin: 0;
+        }
+    }
+    &--title {
+        font-size: 1.5rem;
+    }
+}
+
+.mode-camera {
+    .album-covers {
+        margin: 1rem;
+        &--list {
+            margin: 0rem;
+        }
+        &--title {
+            font-size: 1rem;
+        }
+        @media (min-width: 768px) {
+            margin: 1.5rem 2rem 1rem;
+            &--title {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,19 @@
+
+.board-container {
+    &.mode-gallery {
+        margin: 0 auto;
+        padding-top: 3rem;
+        @media (min-width: 768px) {
+            padding-top: 5rem;
+        }
+        @media (min-width: 1024px) {
+            margin: 0 auto;
+            padding-top: 10rem;
+        }
+        .album-covers {
+            &--title {
+                display: none;
+            }
+        }
+    }
+}

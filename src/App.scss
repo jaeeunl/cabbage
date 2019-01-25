@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "Apercu";
+    src: local('Apercu'), url('./assets/fonts/apercu_light.woff2') format('woff2');
+    weight: 300;
+}
+@font-face {
+    font-family: "Apercu";
+    src: local('Apercu'), url('./assets/fonts/apercu_regular.woff2') format('woff2');
+    weight: 400;
+}
+@font-face {
+    font-family: "Apercu";
+    src: local('Apercu'), url('./assets/fonts/apercu_medium.woff2') format('woff2');
+    weight: 500;
+}
+
+* {
+    box-sizing: border-box;  
+}
+
+@import './styles/colors';
+@import './styles/animations';
+
+body {
+    margin: 0;
+    font-family: "Apercu", sans-serif;
+    color: $black;
+}
+
+button {
+    background: none;
+    border: 0;
+}
