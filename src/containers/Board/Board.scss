@@ -2,4 +2,21 @@
     position: relative;
     max-width: 1260px;
     margin: 0 auto;
+    &.mode-gallery {
+        margin: 0 auto;
+        padding-top: 3rem;
+        @media (min-width: 768px) {
+            padding-top: 5rem;
+        }
+        @media (min-width: 1024px) {
+            margin: 0 auto;
+            max-width: 60rem;
+            padding-top: 7rem;
+        }
+        .album-covers {
+            &--title {
+                display: none;
+            }
+        }
+    }
 }
